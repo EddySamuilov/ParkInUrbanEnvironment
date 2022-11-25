@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Car park</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/reset-css.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/home.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+    <script src="/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <link rel="icon" type="image/png"
+          href="https://cdn-icons-png.flaticon.com/512/741/741407.png">
+</head>
+<body>
+
+<div th:replace="fragments/navbar :: navbar">Navbar here</div>
+
+<main>
+    <div class="container-fluid">
+        <h1 class="text-upper">
+
+            <span sec:authorize="isAuthenticated()">Welcome to Car park, </span>
+            <span sec:authorize="isAuthenticated()"
+                    sec:authentication="name">
+        Name of the logged in user
+    </span>
+            <span sec:authorize="isAnonymous()">
+        Car park
+    </span>
+        </h1>
+    </div>
+</main>
+
+</body>
+</html>
+

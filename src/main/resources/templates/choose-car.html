@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Car park</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/sofia.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+    <script src="/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <link rel="icon" type="image/png"
+          href="https://cdn-icons-png.flaticon.com/512/741/741407.png">
+</head>
+<body>
+<div th:replace="fragments/navbar :: navbar">Navbar here</div>
+
+<main>
+
+    <div class="sofia">
+        <h2 class="heading">All cars for the user:</h2>
+        <div class='row mb-4 d-flex justify-content-around'>
+            <div class="centered">Addresses:
+                <table>
+                    <tr>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Registration number</th>
+                    </tr>
+                    <tr th:each="car: ${cars}" th:object="${car}">
+                        <form th:action="@{/parking/spot}" method="get">
+
+                            <th th:attr="name='brand'" th:text="*{brand}"></th>
+                            <th th:attr="name='street'" th:text="*{model}"></th>
+                            <th th:attr="name='numberOfStreet'" th:text="*{registrationNumber}"></th>
+                            <th>
+                                <button th:href="@{/parking/spot}"
+                                        style="height:30px; width:120px">Choose car
+                                </button>
+                            </th>
+                            </form>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

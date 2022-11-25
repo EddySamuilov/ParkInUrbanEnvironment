@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Car park</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/reset-css.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/register.css"/>
+    <link rel="icon" type="image/png"
+          href="https://cdn-icons-png.flaticon.com/512/741/741407.png">
+</head>
+<body>
+
+<div th:replace="fragments/navbar :: navbar">Navbar here</div>
+
+<main>
+    <div class="register-box">
+        <h1 style="font-size:3vw;">Register</h1>
+        <form th:object="${registerDTO}" th:action="@{/users/register}" method="POST" enctype="multipart/form-data">
+            <div>
+                <p>Username</p>
+                <input th:field="*{username}" th:errorclass="bg-danger" type="text" name="username" placeholder="Enter username...">
+                <small th:each = "e : ${#fields.errors('username')}" th:text = "${e}" class="bg-warning"></small>
+            </div>
+
+            <div>
+                <p>First name</p>
+                <input th:field="*{firstName}" th:errorclass="bg-danger" type="text" name="firstName" placeholder="Enter your first name...">
+                <small th:each = "e : ${#fields.errors('firstName')}" th:text = "${e}" class="bg-warning"></small>
+            </div>
+            <div>
+                <p>Last name</p>
+                <input th:field="*{lastName}" th:errorclass="bg-danger" type="text" name="lastName" placeholder="Enter your last name...">
+                <small th:each = "e : ${#fields.errors('lastName')}" th:text = "${e}" class="bg-warning"></small>
+            </div>
+            <div>
+                <p>Password</p>
+                <input th:field="*{password}" th:errorclass="bg-danger" type="password" name="password" placeholder="Enter password...">
+                <small th:each = "e : ${#fields.errors('password')}" th:text = "${e}" class="bg-warning"></small>
+            </div>
+            <div>
+                <p>Confirm Password</p>
+                <input th:field="*{confirmPassword}" th:errorclass="bg-danger" type="password" name="password" placeholder="Enter your password again...">
+            </div>
+            <div>
+                <p>Email</p>
+                <input th:field="*{email}" th:errorclass="bg-danger" type="email" name="email" placeholder="Enter your email...">
+                <small th:each = "e : ${#fields.errors('email')}" th:text = "${e}" class="bg-warning"></small>
+            </div>
+            <div>
+                <p>Age</p>
+                <input th:field="*{age}" th:errorclass="bg-danger" type="number" name="age" placeholder="Enter age...">
+                <small th:each = "e : ${#fields.errors('age')}" th:text = "${e}" class="bg-warning"></small>
+            </div>
+
+            <input type="submit" name="submit" value="Register">
+        </form>
+
+    </div>
+</main>
+
+
+</body>
+</html>

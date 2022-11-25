@@ -1,0 +1,138 @@
+body {
+    /*background-image: url('/img/car.png');*/
+    /*background-position: center center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-size: cover;*/
+    background-color: #39A;
+
+}
+.add-box {
+    color: #1d112d; /*  */
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.add-box p { /* color of text */
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #1d112d;
+}
+
+.add-box input {
+    width: 100%;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #ffdbdb
+}
+.add-box input[type="text"], input[type="username"] {
+    border: white;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+    background-color: floralwhite;
+}
+
+.add-box input[type="text"], input[type="password"] {
+    border: #AC3030;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+    background-color: floralwhite;
+}
+
+.add-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #343a40;
+    color: floralwhite;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.add-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: dimgray;
+    color: floralwhite;
+}
+
+
+
+.colour-text p { /* color of text */
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #1b1e21;
+}
+
+.brand-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.brand-box input[type="text"], input[type="brand"] {
+    border: black;
+    border-bottom: 1px solid #fff;
+    background: white;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+/*.login-box input[type="text"], input[type="reg"] {*/
+/*    border: #AC3030;*/
+/*    border-bottom: 1px solid #fff;*/
+/*    background: #ff80a6;*/
+/*    outline: none;*/
+/*    height: 40px;*/
+/*    color: black;*/
+/*    font-size: 16px;*/
+/*}*/
+
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: lightslategrey;
+    color: white;
+}
+
+
+.heading {
+    position: static;
+    left: 100px;
+    top: 300px;
+    margin: 0; /* heading style */
+    padding: 150px;
+    text-align: center;
+    font-size: 60px;
+    /*color: #1D112D;*/
+    color: #1b1e21;
+    font-weight: normal;
+}
+.centered {
+    font-weight: bold;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}

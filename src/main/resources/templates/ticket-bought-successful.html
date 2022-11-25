@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Car park</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/reset-css.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <script src="/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <link rel="icon" type="image/png"
+          href="https://cdn-icons-png.flaticon.com/512/741/741407.png">
+</head>
+<body>
+
+<div th:replace="fragments/navbar :: navbar">Navbar here</div>
+
+<main>
+    <h2 class="heading">Successfully bought ticket!</h2></br>
+    <div>
+        <dialog open>
+        <span th:text="'Your ticket number is: ' + ${ticket.number}"></span> </br>
+        <span th:text="'City: ' + ${address.getCity()}"></span> </br>
+        <span th:text="'Neighbourhood: ' + ${address.neighbourhood}"></span> </br>
+        <span th:text="'Street: ' + ${address.street}"></span> </br>
+        <span th:text="'Number of street: ' + ${address.numberOfStreet}"></span> </br>
+        <span th:text="'Date: ' + ${ticket.dateAndTime}"></span> </br>
+        </dialog>
+    </div>
+</main>
+
+</body>
+</html>

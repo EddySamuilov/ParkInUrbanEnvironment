@@ -1,0 +1,38 @@
+body {
+    /*background-image: url('/img/car.png');*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #39A;
+
+}
+.heading {
+    position: static;
+    left: 100px;
+    top: 300px;
+    margin: 0; /* heading style */
+    padding: 150px;
+    text-align: center;
+    font-size: 60px;
+    /*color: #1D112D;*/
+    color: #1b1e21;
+    font-weight: normal;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+thick {
+    font-weight: bold;
+}
+
+.centered {
+    font-weight: bold;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}

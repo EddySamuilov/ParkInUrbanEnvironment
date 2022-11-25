@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Car park</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/reset-css.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/add-car.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <script src="/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <link rel="icon" type="image/png"
+          href="https://cdn-icons-png.flaticon.com/512/741/741407.png">
+</head>
+<body>
+
+<div th:replace="fragments/navbar :: navbar">Navbar here</div>
+
+<main>
+    <div class="add-box">
+        <h1>Add your car:</h1>
+        <form th:object="${carDTO}" th:action="@{/cars/add}" method="POST">
+
+            <div>
+                <p>Brand</p>
+                <input th:field="*{brand}" th:errorclass="bg-danger" type="text" name="brand" placeholder="Enter brand">
+                <small th:each="e : ${#fields.errors('brand')}" th:text="${e}" class="text-danger"></small>
+            </div>
+
+            <div>
+                <p>Registration number</p>
+                <input th:field="*{registrationNumber}" th:errorclass="bg-danger" type="text" name="registrationNumber"
+                       placeholder="Enter registration number">
+                <small th:each="e : ${#fields.errors('registrationNumber')}" th:text="${e}" class="text-danger"></small>
+            </div>
+
+            <div>
+                <p>Model</p>
+                <input th:field="*{model}" th:errorclass="bg-danger" type="text" name="model" placeholder="Enter model">
+                <small th:each="e : ${#fields.errors('model')}" th:text="${e}" class="text-danger"></small>
+            </div>
+
+            <input type="submit" name="submit" value="Add">
+        </form>
+    </div>
+</main>
+
+</body>
+</html>

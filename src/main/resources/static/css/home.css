@@ -1,0 +1,42 @@
+body {
+    background-image: url('/images/car.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #39A;
+
+}
+/*h1 {*/
+/*    margin: 0; !* heading style *!*/
+/*    padding: 0 0 20px;*/
+/*    text-align: center;*/
+/*    font-size: 60px;*/
+/*    !*color: #1D112D;*!*/
+/*    color: #1b1e21;*/
+/*    font-weight: normal;*/
+/*}*/
+/*.heading {*/
+/*    position: static;*/
+/*    left: 100px;*/
+/*    top: 300px;*/
+/*    margin: 0; !* heading style *!*/
+/*    padding: 150px;*/
+/*    text-align: center;*/
+/*    font-size: 100px;*/
+/*    !*color: #1D112D;*!*/
+/*    color: #1b1e21;*/
+/*    font-weight: normal;*/
+/*}*/
+
+.text-upper {
+    color: springgreen;
+    top: 29%;
+    left: 50%;
+    font-size: 25px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+
+}

@@ -1,0 +1,60 @@
+body {
+    /*background-image: url('/img/car.png');*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #39A;
+
+    /*#1d112d*/
+}
+
+.register-box {
+    width: 320px;
+    height: 700px;
+    color: #1d112d;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.register-box p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #1d112d;
+}
+
+.register-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.register-box input[type="text"], input[type="password"], input[type="email"], input[type="number"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+    background-color: floralwhite;
+}
+
+.register-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #343a40;
+    color: floralwhite;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.register-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: dimgray;
+    color: floralwhite;
+}

@@ -1,0 +1,333 @@
+body {
+    /*background-image: url('/img/car.png');*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #39A;
+
+}
+.sofia {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #39A;
+}
+/*.backgrounded{*/
+/*    background-color: #AC3030;*/
+/*}*/
+
+.geramond {
+    font-family: 'EB Garamond', serif;
+    font-size: 5vw;
+    padding-top: 100px;
+    padding-left: 130px;
+    color: #1D112D;
+    /*color: #09070c;*/
+    font-weight: bold;
+}
+
+.navbar-upper {
+    background: #AC3030; /* navigation */
+}
+
+.logo-index {
+    font-family: 'Georgia', serif;
+    font-size: 5vw;
+    padding-top: 100px;
+    padding-left: 130px;
+    color: #AC3030;
+}
+
+.navbar-brand {
+    font-family: 'Georgia', serif; /* navigation text */
+    font-size: 20px;
+    color: #ffdbdb;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+
+/*a.register-button {*/
+/*    display: inline-block;*/
+/*    padding: 0.35em;*/
+/*    border: none;*/
+/*    outline: none;*/
+/*    margin: 0 1.3em 2.3em 0;*/
+/*    border-radius: 20px;*/
+/*    box-sizing: border-box;*/
+/*    text-decoration: none;*/
+/*    font-family: 'Georgia', serif;*/
+/*    color: #ffdbdb;*/
+/*    text-align: center;*/
+/*    transition: all 0.2s;*/
+/*    background: #AC3030;*/
+/*    font-size: 43px;*/
+/*    width: 200px;*/
+
+/*}*/
+
+/*a.register-button:hover {*/
+/*    color: #fff2f2;*/
+/*    background-color: deeppink;*/
+/*}*/
+
+a.login-button {
+    display: block;
+    padding: 0.35em;
+    border: none;
+    outline: none;
+    margin: 0 1.3em 2.3em 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Georgia', serif;
+    color: #ffdbdb;
+    text-align: center;
+    transition: all 0.2s;
+    background: #AC3030;
+    font-size: 43px;
+    width: 200px;
+
+}
+
+a.login-button:hover {
+    color: #fff2f2;
+    background-color: deeppink;
+}
+
+
+.profile {
+    font-family: 'Georgia', serif;
+    color: #ffdbdb;
+}
+
+.profile-padding {
+    color: brown;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+
+.text-upper {
+    color: brown;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+
+}
+
+h1 {
+    margin: 0; /* heading style */
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 60px;
+    color: brown;
+}
+
+.h1-1 {
+    margin: 0;
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 20px;
+    color: brown;
+}
+
+.button {
+    color: pink; /*  */
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.button input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 60px;
+    width: 240px;
+    background: brown;
+    color: #ffdbdb;
+    font-size: 30px;
+    border-radius: 40px;
+}
+
+.button input[type="submit"]:hover {
+    cursor: pointer;
+    background: deeppink;
+    color: white;
+}
+
+.message-1 {
+    color: brown;
+    top: 70%;
+    left: 53%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    padding: 100px 200px;
+}
+
+.message {
+    color: brown;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+
+/*.login-box {*/
+/*    color: pink; !*  *!*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    position: absolute;*/
+/*    transform: translate(-50%, -50%);*/
+/*    box-sizing: border-box;*/
+/*    padding: 70px 30px;*/
+/*}*/
+
+/*.login-box p { !* color of text *!*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    font-weight: bold;*/
+/*    color: brown;*/
+/*}*/
+
+/*.login-box input {*/
+/*    width: 100%;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.login-box input[type="text"], input[type="password"] {*/
+/*    border: #AC3030;*/
+/*    border-bottom: 1px solid #fff;*/
+/*    background: #ff80a6;*/
+/*    outline: none;*/
+/*    height: 40px;*/
+/*    color: black;*/
+/*    font-size: 16px;*/
+/*}*/
+
+
+/*.login-box input[type="submit"] {*/
+/*    border: none;*/
+/*    outline: none;*/
+/*    height: 40px;*/
+/*    background: brown;*/
+/*    color: #ffdbdb;*/
+/*    font-size: 18px;*/
+/*    border-radius: 20px;*/
+/*}*/
+
+/*.login-box input[type="submit"]:hover {*/
+/*    cursor: pointer;*/
+/*    background: deeppink;*/
+/*    color: white;*/
+/*}*/
+
+
+/*.register-box {*/
+/*    width: 320px;*/
+/*    height: 700px;*/
+/*    color: brown;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    position: absolute;*/
+/*    transform: translate(-50%, -50%);*/
+/*    box-sizing: border-box;*/
+/*    padding: 70px 30px;*/
+/*}*/
+
+/*.register-box p {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.register-box input {*/
+/*    width: 100%;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.register-box input[type="text"], input[type="password"], input[type="email"], input[type="number"] {*/
+/*    border: none;*/
+/*    border-bottom: 1px solid #fff;*/
+/*    background: #ff80a6;*/
+/*    outline: none;*/
+/*    height: 40px;*/
+/*    color: black;*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*.register-box input[type="submit"] {*/
+/*    border: none;*/
+/*    outline: none;*/
+/*    height: 40px;*/
+/*    background: brown;*/
+/*    color: #ffdbdb;*/
+/*    font-size: 18px;*/
+/*    border-radius: 20px;*/
+/*}*/
+
+/*.register-box input[type="submit"]:hover {*/
+/*    cursor: pointer;*/
+/*    background: deeppink;*/
+/*    color: white;*/
+/*}*/
+
+
+@media all and (max-width: 30em) {
+    a.register-button {
+        display: block;
+        margin: 0.4em auto;
+    }
+
+    a.login-button {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+.buttons { /*middle position */
+    padding-left: 650px;
+    padding-top: 50px;
+}
+
+.heading {
+    position: static;
+    left: 100px;
+    top: 300px;
+    margin: 0; /* heading style */
+    padding: 150px;
+    text-align: center;
+    font-size: 60px;
+    /*color: #1D112D;*/
+    color: #1b1e21;
+    font-weight: normal;
+}
+
+.center {
+    position: static;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+}
+
+.nav-back{
+    color: dimgray;
+}

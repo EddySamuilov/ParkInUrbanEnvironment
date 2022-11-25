@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Car park</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/sofia.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+    <script src="/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <link rel="icon" type="image/png"
+          href="https://cdn-icons-png.flaticon.com/512/741/741407.png">
+</head>
+<body>
+<div th:replace="fragments/navbar :: navbar">Navbar here</div>
+
+<main>
+
+    <div class="sofia">
+        <h2 class="heading">All parking spots</h2>
+        <div class='row mb-4 d-flex justify-content-around'>
+            <div class="centered">Addresses:
+                <table>
+                    <tr>
+                        <th>Neighbourhood</th>
+                        <th>Street</th>
+                        <th>Number of Street</th>
+                        <th>Choose address</th>
+                    </tr>
+                    <tr th:each="address: ${addresses}" th:object="${address}">
+                        <form th:if="${!address.isOccupied()}" th:action="@{/ticket/buy}" method="post">
+
+                            <input type="hidden" th:attr="name='id'" th:value="*{id}"/>
+                            <th th:attr="name='neighbourhood'" th:text="*{neighbourhood}"></th>
+                            <th th:attr="name='street'" th:text="*{street}"></th>
+                            <th th:attr="name='numberOfStreet'" th:text="*{numberOfStreet}"></th>
+                            <th th:if="${!address.isOccupied()}">
+                                <button th:href="@{/ticket/buy}"
+                                        style="height:30px; width:120px">Get ticket
+                                </button>
+                            </th>
+                        </form>
+                        <form th:if="${address.isOccupied()}" th:action="@{/ticket/buy-error}" method="get">
+
+                            <input type="hidden" th:attr="name='id'" th:value="*{id}"/>
+                            <th th:attr="name='neighbourhood'" th:text="*{neighbourhood}"></th>
+                            <th th:attr="name='street'" th:text="*{street}"></th>
+                            <th th:attr="name='numberOfStreet'" th:text="*{numberOfStreet}"></th>
+                            <th th:if="${address.isOccupied()}">
+                                <button th:href="@{/ticket/buy-error}"
+                                        class="bg-danger">Get ticket
+                                </button>
+                            </th>
+                            </th>
+                        </form>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
